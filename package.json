@@ -1,0 +1,33 @@
+{
+  "name": "eslint-prettier-vlaqa",
+  "version": "1.0.0",
+  "description": "Custom eslint and prettier configuration for personal use",
+  "main": "index.js",
+  "type": "module",
+  "files": [
+    "rules/",
+    "index.js",
+    "prettier.config.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "eslint": ">= 9",
+    "prettier": ">= 3",
+    "@stylistic/eslint-plugin-js": ">= 4",
+    "eslint-config-prettier": ">= 10",
+    "eslint-plugin-prettier": ">= 5",
+    "globals": ">=15",
+    "@eslint/js": ">= 9",
+    "typescript-eslint": ">= 8"
+  },
+  "keywords": [
+    "eslint",
+    "prettier",
+    "automation",
+    "formatter"
+  ],
+  "author": "VolodymyrLQA",
+  "license": "MIT"
+}
