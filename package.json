@@ -1,6 +1,6 @@
 {
   "name": "eslint-prettier-vlaqa",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom eslint and prettier configuration for personal use",
   "main": "index.js",
   "type": "module",
