@@ -7,9 +7,10 @@ import pluginPrettier from 'eslint-plugin-prettier';
 import commonRules from './rules/common.js';
 import stylisticRules from './rules/stylistic.js';
 import typescriptRules from './rules/typescript.js';
+import jestPlugin from 'eslint-plugin-jest';
 
 const configVLAQA = {
-  ignores: ['node_modules/**'],
+  ignores: ['**/node_modules/**/*'],
   languageOptions: {
     globals: { ...globals.es2025, ...globals.browser, ...globals.node },
     parser: tseslint.parser,
@@ -19,7 +20,7 @@ const configVLAQA = {
     },
   },
   files: ['**/*.{js,mjs,cjs,ts}'],
-  plugins: { '@stylistic/js': stylisticJs, prettier: pluginPrettier },
+  plugins: { '@stylistic/js': stylisticJs, prettier: pluginPrettier, jest: jestPlugin },
   rules: {
     'prettier/prettier': 'error',
     ...commonRules,
