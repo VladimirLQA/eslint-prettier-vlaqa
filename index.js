@@ -26,6 +26,7 @@ const configVLAQA = {
     ...commonRules,
     ...stylisticRules,
     ...typescriptRules,
+    ...jestPlugin.configs.all,
   },
 };
 
